@@ -1,0 +1,94 @@
+<html>
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<br>
+  <center>
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-6 col-md-offset-3">
+          <h1>Formulair d'Achat</h1>
+        <form action="trait.php" method="POST">
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">CIN</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" pattern="[0-9]{8}" placeholder="cin" name="cin" align='center'>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label ">Nom</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="Nom" name="nom">
+            </div>
+          </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Prenom</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Prenom" name="prenom">
+              </div>
+            </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" placeholder="Email" name="email">
+                </div>
+              </div>
+                <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">Telephone</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" pattern="[0-9]{8}" placeholder="telephone" name="telephone">
+                  </div>
+                </div>
+                  <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Date de naissance</label>
+                    <div class="col-sm-10">
+                      <input type="date" class="form-control" max="1995-12-31" min="1960-01-01"
+                        placeholder="date de naissance" name="date">
+
+                    </div>
+                  </div>
+                    <label class="col-sm-2 col-form-label">Sexe</label>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" value="homme">
+                        Homme
+                      </label>
+                    </div>
+
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" value="femme" checked>
+                        Femme
+                      </label>
+                    </div>
+                    <div class="input-group justify-content-md-center">
+                      <div class="input-group-prepend">
+                      <select class="custom-select" name="car" required>
+                        <option value="" disabled selected>Choisissez votre modele de voiture </option>
+                        <option value="BMW5">BMW 5</option>
+                        <option value="BMWM6">BMW M6</option>
+                        <option value="BMWX5">BMW X5</option>
+                        <option value="bmw3">BMW 3</option>
+                        <option value="bmwi8">BMW i8</option>
+                      </select>
+                      </div></div>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-success"><i class="fa fa-paper-plane"></i>envoyer</button>
+                    <button type="reset" class="btn btn-danger"><i class="fa fa-close"></i>annuler</button>
+        </form>
+      </div>
+    </div>
+  </center>
+</body>
+
+</html>
